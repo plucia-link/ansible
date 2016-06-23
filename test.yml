@@ -1,2 +1,6 @@
-- name: touch this file
-  file: path=/tmp/here.i.am state=touch
+- hosts: test
+#  become: true
+#  become_user: "{{ sudoer }}"
+  gather_facts: no
+  roles:
+    - test
