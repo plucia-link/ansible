@@ -1,4 +1,5 @@
 - hosts: test
+  user: root
 #  become: true
 #  become_user: "{{ sudoer }}"
   gather_facts: no
