@@ -1,0 +1,6 @@
+- hosts: activatekey
+#  become: true
+#  become_user: "{{ sudoer }}"
+  gather_facts: no
+  roles:
+    - send_my_key
